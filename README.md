@@ -13,6 +13,7 @@ Resimleri, üç eşik değeri belirleyerek farklı yoğunluk bölgelerine ayırd
 3x3’lük Kernel matrisini aşağıdaki kod ile tanımladım:
 kernel = np.ones((3, 3), np.uint8)
 Bu Kernel, Erosion, Dilation Opening, ve Closing işlemlerini uygularken görüntüyü pikseller bazında işleyerek detaylı ve küçük ölçekli olmasını sağlar. Bu operatör şöyle gözükür:
+
  ![image](https://github.com/user-attachments/assets/822a7808-79d6-4c79-84e5-ceb4020e01ca)
  
 Bu matris Kernel olarak adlandırılır. Her bir piksel için bu filtre uygulanır. Erosion (aşındırma), bu alanın tamamındaki değerler düşükse orta noktadaki değeri de dşürür. Dilation (genişletme), alandaki değerler yüksekse orta noktadaki değeri yükseltir. Bunların kombinasyonunu opening ve closing işlemlerinde gerçekleştiririz. 
